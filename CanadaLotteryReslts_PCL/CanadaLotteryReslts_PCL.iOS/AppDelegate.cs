@@ -26,6 +26,10 @@ namespace CanadaLotteryReslts_PCL.iOS
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
+
+            UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(1, 71, 126);
+            UINavigationBar.Appearance.Translucent = false;
+            UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes { TextColor = UIColor.White });
         }
     }
 }
