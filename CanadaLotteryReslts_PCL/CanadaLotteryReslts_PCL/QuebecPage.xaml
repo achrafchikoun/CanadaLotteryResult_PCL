@@ -1,8 +1,370 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CanadaLotteryReslts_PCL.QuebecPage">
+             x:Class="CanadaLotteryReslts_PCL.QuebecPage"
+             xmlns:Ad="clr-namespace:CanadaLotteryReslts_PCL.AdMob;assembly=CanadaLotteryReslts_PCL"
+             Title="Quebec">
 
-    <Label Text="Quebec" HorizontalOptions="Center" VerticalOptions="Center"/>
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <ScrollView VerticalOptions="Start">
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="5, 10, 5, 0">
+
+                <!-- Quebec 49 START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_quebec_49.png" Aspect="AspectFit" WidthRequest="80" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="quebec_49_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="quebec_49_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="quebec_49_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="quebec_49_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="quebec_49_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="quebec_49_n5" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="quebec_49_n6" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="quebec_49_n7" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="quebec_49_n8" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button x:Name="btnLottoQuebec49Prize" Clicked="btnLottoQuebec49Prize_Clicked" WidthRequest="140" Text="Prize Payouts" TextColor="#31708f" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#565556" HorizontalOptions="Start"/>
+                            <Button x:Name="btnLottoQuebec49Statitics" Clicked="btnLottoQuebec49Statitics_Clicked" WidthRequest="140" Text="Statistics" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- Quebec 49 END -->
+
+                <!-- Astro START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd" Margin="0, 15, 0, 0">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_quebec_astro.png" Aspect="AspectFit" WidthRequest="80" HorizontalOptions="Start" />
+                            <Label x:Name="astro_evening_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="astro_evening_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="astro_evening_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="130" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="astro_evening_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="astro_evening_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="130" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button x:Name="btnAstroHistorical" Clicked="btnAstroHistorical_Clicked" WidthRequest="130" Text="Historical" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- Astro END -->
+
+                <!-- Banco START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd" Margin="0, 15, 0, 0">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_quebec_banco.png" Aspect="AspectFit" WidthRequest="80" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="banco_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="banco_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="banco_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            <Label x:Name="banco_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            <Label x:Name="banco_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            <Label x:Name="banco_n5" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="banco_n6" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="banco_n7" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            <Label x:Name="banco_n8" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            <Label x:Name="banco_n9" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            <Label x:Name="banco_n10" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="banco_n11" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="banco_n12" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            <Label x:Name="banco_n13" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            <Label x:Name="banco_n14" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            <Label x:Name="banco_n15" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="banco_n16" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="banco_n17" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            <Label x:Name="banco_n18" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            <Label x:Name="banco_n19" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            <Label x:Name="banco_n20" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button x:Name="btnBancoHistorical" Clicked="btnBancoHistorical_Clicked" WidthRequest="130" Text="Historical" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- Banco END -->
+
+                <!-- Extra START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_quebec_extra.png" Aspect="AspectFit" WidthRequest="80" HorizontalOptions="Start" />
+                            <Label x:Name="extra_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="extra_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="130" HeightRequest="35" BackgroundColor="#369"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button x:Name="btnExtraHistorical" Clicked="btnExtraHistorical_Clicked" WidthRequest="130" Text="Historical" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- Extra END -->
+
+                <!-- LaMini START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_quebec_la_mini.png" Aspect="AspectFit" WidthRequest="80" HorizontalOptions="Start" />
+                            <Label x:Name="la_mini_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="la_mini_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="130" HeightRequest="35" BackgroundColor="#369"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button x:Name="btnLaMiniHistorical" Clicked="btnLaMiniHistorical_Clicked" WidthRequest="130" Text="Historical" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- LaMini END -->
+
+                <!-- Quotidienne 3 START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd" Margin="0, 15, 0, 0">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_quebec_la_quotidienne_3.png" Aspect="AspectFit" WidthRequest="80" HorizontalOptions="Start" />
+                            <Label x:Name="la_quotidienne_3_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="la_quotidienne_3_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="la_quotidienne_3_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="la_quotidienne_3_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="la_quotidienne_3_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="130" HeightRequest="35" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button x:Name="btnQuotidienne3Historical" Clicked="btnQuotidienne3Historical_Clicked" WidthRequest="130" Text="Historical" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- Quotidienne 3 END -->
+
+                <!-- Quotidienne 4 START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd" Margin="0, 15, 0, 0">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_quebec_la_quotidienne_4.png" Aspect="AspectFit" WidthRequest="80" HorizontalOptions="Start" />
+                            <Label x:Name="la_quotidienne_4_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="la_quotidienne_4_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="la_quotidienne_4_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="la_quotidienne_4_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="la_quotidienne_4_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="la_quotidienne_4_n5" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="130" HeightRequest="35" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button x:Name="btnQuotidienne4Historical" Clicked="btnQuotidienne4Historical_Clicked" WidthRequest="130" Text="Historical" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- Quotidienne 4 END -->
+
+                <!-- LottoD START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_quebec_lottod.png" Aspect="AspectFit" WidthRequest="80" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="lotto_d_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="lotto_d_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="lotto_d_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_d_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_d_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_d_n5" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_d_n6" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_d_n7" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_d_n8" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button x:Name="btnLottoDHistorical" Clicked="btnLottoDHistorical_Clicked" WidthRequest="130" Text="Historical" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- LottoD END -->
+
+                <!-- Quebec max START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_quebec_max.png" Aspect="AspectFit" WidthRequest="80" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="quebec_max_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="quebec_max_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="quebec_max_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="quebec_max_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="quebec_max_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="quebec_max_n5" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="quebec_max_n6" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="quebec_max_n7" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="quebec_max_n8" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button x:Name="btnLottoQuebecMaxPrize" Clicked="btnLottoQuebecMaxPrize_Clicked" WidthRequest="140" Text="Prize Payouts" TextColor="#31708f" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#565556" HorizontalOptions="Start"/>
+                            <Button x:Name="btnLottoQuebecMaxStatitics" Clicked="btnLottoQuebecMaxStatitics_Clicked" WidthRequest="140" Text="Statistics" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- Quebec max END -->
+
+                <!-- Triplex START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd" Margin="0, 15, 0, 0">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_quebec_triplex.png" Aspect="AspectFit" WidthRequest="80" HorizontalOptions="Start" />
+                            <Label x:Name="triplex_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="triplex_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="triplex_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="triplex_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="triplex_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="triplex_n5" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="triplex_n6" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="120" HeightRequest="35" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button x:Name="btnTriplexHistorical" Clicked="btnTriplexHistorical_Clicked" WidthRequest="130" Text="Historical" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- Triplex END -->
+
+                <!-- Sprinto START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd" Margin="0, 15, 0, 0">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_sprinto.png" Aspect="AspectFit" WidthRequest="80" HorizontalOptions="Start" />
+                            <Label x:Name="sprinto_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="sprinto_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="sprinto_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="sprinto_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="sprinto_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="sprinto_n5" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button x:Name="btnSprintoHistorical" Clicked="btnSprintoHistorical_Clicked" WidthRequest="130" Text="Historical" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- Sprinto END -->
+
+                <!-- Tout ou Rien START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd" Margin="0, 15, 0, 0">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_quebec_tout_ou_rien.png" Aspect="AspectFit" WidthRequest="80" HorizontalOptions="Start" />
+                            <Label x:Name="toutourien_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="toutourien_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="toutourien_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="toutourien_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="toutourien_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="toutourien_n5" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="toutourien_n6" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button x:Name="btnToutouRienHistorical" Clicked="btnToutouRienHistorical_Clicked" WidthRequest="130" Text="Historical" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- Tout ou Rien END -->
+
+            </StackLayout>
+        </ScrollView>
+
+        <!-- AdMob banner START -->
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="Center">
+            <Ad:AdBanner Size="SmartBannerPortrait" HorizontalOptions="Center" VerticalOptions="End"/>
+        </StackLayout>
+        <!-- AdMob banner END -->
+    </StackLayout>
     
 </ContentPage>

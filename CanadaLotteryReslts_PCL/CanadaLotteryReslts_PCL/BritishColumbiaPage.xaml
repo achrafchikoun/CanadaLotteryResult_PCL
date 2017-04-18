@@ -1,5 +1,141 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CanadaLotteryReslts_PCL.BritishColumbiaPage">
+             x:Class="CanadaLotteryReslts_PCL.BritishColumbiaPage"
+             xmlns:Ad="clr-namespace:CanadaLotteryReslts_PCL.AdMob;assembly=CanadaLotteryReslts_PCL"
+             Title="British Columbia">
+    
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <ScrollView VerticalOptions="Start">
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="5, 10, 5, 0">
+
+                <!-- BC 49 START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_bc_49.png" Aspect="AspectFit" WidthRequest="80" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="bc_49_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="bc_49_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="bc_49_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="bc_49_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="bc_49_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="bc_49_n5" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="bc_49_n6" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="bc_49_n7" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button x:Name="btnBC49Prize" Clicked="btnBC49Prize_Clicked" WidthRequest="140" Text="Prize Payouts" TextColor="#31708f" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#565556" HorizontalOptions="Start"/>
+                            <Button x:Name="btnBC49Statitics" Clicked="btnBC49Statitics_Clicked" WidthRequest="140" Text="Statistics" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- BC 49 END -->
+
+                <!-- Extra START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd" Margin="0, 15, 0, 0">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_bc_extra.png" Aspect="AspectFit" WidthRequest="80" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="extra_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="extra_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="extra_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="6, 0, 0, 0"/>
+                            <Label x:Name="extra_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="6, 0, 0, 0"/>
+                            <Label x:Name="extra_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="6, 0, 0, 0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15">
+                            <Button x:Name="btnExtraHistorical" Clicked="btnExtraHistorical_Clicked" WidthRequest="130" Text="Historical" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- Extra END -->
+
+                <!-- LOTTO MAX START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd" Margin="0, 15, 0, 0">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_lotto_max.png" Aspect="AspectFit" WidthRequest="80" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="lotto_max_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="lotto_max_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="lotto_max_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_max_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_max_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_max_n5" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_max_n6" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_max_n7" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_max_n8" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15" HorizontalOptions="Center">
+                            <Button x:Name="btnLottoMaxDetail" Clicked="btnLottoMaxDetail_Clicked" WidthRequest="100" Text="Details" TextColor="#565556" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#565556" HorizontalOptions="Start"/>
+                            <Button x:Name="btnLottoMaxPrize" Clicked="btnLottoMaxPrize_Clicked" WidthRequest="135" Text="Prize Payouts" TextColor="#31708f" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#565556" HorizontalOptions="Center"/>
+                            <Button x:Name="btnLottoMaxStatitics" Clicked="btnLottoMaxStatitics_Clicked" WidthRequest="110" Text="Statistics" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="End"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- LOTTO MAX END -->
+
+                <!-- LOTTO 649 START -->
+                <Frame Padding="1, 5, 1, 1" BackgroundColor="#dddddd" Margin="0, 15, 0, 0">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+
+                        <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5">
+                            <Image Source="logo_lotto_649.png" Aspect="AspectFit" WidthRequest="80" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="lotto_649_tirage_du" Text="December 23, 2016" FontSize="14" VerticalOptions="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                            <Label x:Name="lotto_649_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="lotto_649_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_649_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_649_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_649_n5" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_649_n6" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="lotto_649_n7" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 15" HorizontalOptions="Center">
+                            <Button x:Name="btnLotto649Detail" Clicked="btnLotto649Detail_Clicked" WidthRequest="100" Text="Details" TextColor="#565556" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#565556" HorizontalOptions="Start"/>
+                            <Button x:Name="btnLotto649Prize" Clicked="btnLotto649Prize_Clicked" WidthRequest="135" Text="Prize Payouts" TextColor="#31708f" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#565556" HorizontalOptions="Center"/>
+                            <Button x:Name="btnLotto649Statitics" Clicked="btnLotto649Statitics_Clicked" WidthRequest="110" Text="Statistics" TextColor="#8a6d3b" BackgroundColor="White" FontSize="15" FontAttributes="Bold" BorderWidth="1" BorderColor="#8a6d3b" HorizontalOptions="End"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <!-- LOTTO 649 END -->
+
+            </StackLayout>
+        </ScrollView>
+
+        <!-- AdMob banner START -->
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="Center">
+            <Ad:AdBanner Size="SmartBannerPortrait" HorizontalOptions="Center" VerticalOptions="End"/>
+        </StackLayout>
+        <!-- AdMob banner END -->
+    </StackLayout>
+
 </ContentPage>

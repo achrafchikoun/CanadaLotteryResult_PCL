@@ -46,6 +46,15 @@
     <Compile Include="BritishColumbiaPage.xaml.cs">
       <DependentUpon>BritishColumbiaPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Details\DailyGrandDetailsPage.xaml.cs">
+      <DependentUpon>DailyGrandDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Details\Lotto649DetailsPage.xaml.cs">
+      <DependentUpon>Lotto649DetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Details\LottoMaxDetailsPage.xaml.cs">
+      <DependentUpon>LottoMaxDetailsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
@@ -59,9 +68,81 @@
     <Compile Include="OntarioPage.xaml.cs">
       <DependentUpon>OntarioPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PrizePayouts\Atlantic49PrizePage.xaml.cs">
+      <DependentUpon>Atlantic49PrizePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrizePayouts\BC49PrizePage.xaml.cs">
+      <DependentUpon>BC49PrizePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrizePayouts\DailyGrandPrizePage.xaml.cs">
+      <DependentUpon>DailyGrandPrizePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrizePayouts\Lotto649PrizePage.xaml.cs">
+      <DependentUpon>Lotto649PrizePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrizePayouts\LottoMaxPrizePage.xaml.cs">
+      <DependentUpon>LottoMaxPrizePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrizePayouts\Ontario49PrizePage.xaml.cs">
+      <DependentUpon>Ontario49PrizePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrizePayouts\OntarioLottarioPrizePage.xaml.cs">
+      <DependentUpon>OntarioLottarioPrizePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrizePayouts\OntarioMegadicePrizePage.xaml.cs">
+      <DependentUpon>OntarioMegadicePrizePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrizePayouts\Quebec49PrizePage.xaml.cs">
+      <DependentUpon>Quebec49PrizePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrizePayouts\QuebecMaxPrizePage.xaml.cs">
+      <DependentUpon>QuebecMaxPrizePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrizePayouts\Western649PrizePage.xaml.cs">
+      <DependentUpon>Western649PrizePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrizePayouts\WesternMaxPrizePage.xaml.cs">
+      <DependentUpon>WesternMaxPrizePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuebecPage.xaml.cs">
       <DependentUpon>QuebecPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\Atlantic49StatiticsPage.xaml.cs">
+      <DependentUpon>Atlantic49StatiticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\BC49StatisticsPage.xaml.cs">
+      <DependentUpon>BC49StatisticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\DailyGrandStatiticsPage.xaml.cs">
+      <DependentUpon>DailyGrandStatiticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\Lotto649StatiticsPage.xaml.cs">
+      <DependentUpon>Lotto649StatiticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\LottoMaxStatisticsPage.xaml.cs">
+      <DependentUpon>LottoMaxStatisticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\Ontario49StatisticsPage.xaml.cs">
+      <DependentUpon>Ontario49StatisticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\OntarioLottarioStatisticsPage.xaml.cs">
+      <DependentUpon>OntarioLottarioStatisticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\OntarioMegadiceStatisticsPage.xaml.cs">
+      <DependentUpon>OntarioMegadiceStatisticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\Quebec49StatisticsPage.xaml.cs">
+      <DependentUpon>Quebec49StatisticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\QuebecMaxStatisticsPage.xaml.cs">
+      <DependentUpon>QuebecMaxStatisticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\Western649StatisticsPage.xaml.cs">
+      <DependentUpon>Western649StatisticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\WesternMaxStatisticsPage.xaml.cs">
+      <DependentUpon>WesternMaxStatisticsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="WesternPage.xaml.cs">
       <DependentUpon>WesternPage.xaml</DependentUpon>
@@ -153,7 +234,168 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Historical\" />
-    <Folder Include="PrizePayouts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Details\Lotto649DetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Details\LottoMaxDetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Details\DailyGrandDetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrizePayouts\Lotto649PrizePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrizePayouts\LottoMaxPrizePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrizePayouts\DailyGrandPrizePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrizePayouts\Atlantic49PrizePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrizePayouts\BC49PrizePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrizePayouts\Ontario49PrizePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrizePayouts\OntarioLottarioPrizePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrizePayouts\OntarioMegadicePrizePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrizePayouts\Quebec49PrizePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrizePayouts\QuebecMaxPrizePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrizePayouts\Western649PrizePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrizePayouts\WesternMaxPrizePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Statistics\Atlantic49StatiticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Statistics\Lotto649StatiticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Statistics\LottoMaxStatisticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Statistics\DailyGrandStatiticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Statistics\OntarioMegadiceStatisticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Statistics\Ontario49StatisticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Statistics\OntarioLottarioStatisticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Statistics\Quebec49StatisticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Statistics\QuebecMaxStatisticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Statistics\Western649StatisticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Statistics\WesternMaxStatisticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Statistics\BC49StatisticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
