@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CanadaLotteryReslts_PCL.AdMob;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,11 +15,15 @@ namespace CanadaLotteryReslts_PCL
             InitializeComponent();
 
             MainPage = new CanadaLotteryReslts_PCL.MainPage();
+
+            IAdInterstitial adInterstitial = DependencyService.Get<IAdInterstitial>();
+
+            adInterstitial.ShowAd();
         }
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            
         }
 
         protected override void OnSleep()

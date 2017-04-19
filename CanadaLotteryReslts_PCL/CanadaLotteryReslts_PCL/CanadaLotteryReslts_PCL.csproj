@@ -55,6 +55,7 @@
     <Compile Include="Details\LottoMaxDetailsPage.xaml.cs">
       <DependentUpon>LottoMaxDetailsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GlobalVariable.cs" />
     <Compile Include="HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>

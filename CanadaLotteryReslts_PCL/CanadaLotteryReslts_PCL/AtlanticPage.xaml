@@ -26,8 +26,7 @@
                             <Label x:Name="atlantic_49_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
                             <Label x:Name="atlantic_49_n5" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
                             <Label x:Name="atlantic_49_n6" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                            <Label x:Name="atlantic_49_n7" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                            <Label x:Name="atlantic_49_n8" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="atlantic_49_n7" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
                         </StackLayout>
 
                         <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
