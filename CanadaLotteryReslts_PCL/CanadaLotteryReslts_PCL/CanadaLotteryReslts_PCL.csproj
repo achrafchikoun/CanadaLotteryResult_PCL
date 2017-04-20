@@ -56,6 +56,87 @@
       <DependentUpon>LottoMaxDetailsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="GlobalVariable.cs" />
+    <Compile Include="Historical\AtlanticBuckoHistoricalPage.xaml.cs">
+      <DependentUpon>AtlanticBuckoHistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\AtlanticKenoHistoricalPage.xaml.cs">
+      <DependentUpon>AtlanticKenoHistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\AtlanticSalsaBingoHistoricalPage.xaml.cs">
+      <DependentUpon>AtlanticSalsaBingoHistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\AtlanticTagHistoricalPage.xaml.cs">
+      <DependentUpon>AtlanticTagHistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\BCExtraHistoricalPage.xaml.cs">
+      <DependentUpon>BCExtraHistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\OntarioEncoreEveningPage.xaml.cs">
+      <DependentUpon>OntarioEncoreEveningPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\OntarioEncoreMiddayPage.xaml.cs">
+      <DependentUpon>OntarioEncoreMiddayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\OntarioKenoEveningPage.xaml.cs">
+      <DependentUpon>OntarioKenoEveningPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\OntarioKenoMiddayPage.xaml.cs">
+      <DependentUpon>OntarioKenoMiddayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\OntarioPick2EveningPage.xaml.cs">
+      <DependentUpon>OntarioPick2EveningPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\OntarioPick2MiddayPage.xaml.cs">
+      <DependentUpon>OntarioPick2MiddayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\OntarioPick3EveningPage.xaml.cs">
+      <DependentUpon>OntarioPick3EveningPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\OntarioPick3MiddayPage.xaml.cs">
+      <DependentUpon>OntarioPick3MiddayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\OntarioPick4EveningPage.xaml.cs">
+      <DependentUpon>OntarioPick4EveningPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\OntarioPick4MiddayPage.xaml.cs">
+      <DependentUpon>OntarioPick4MiddayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\QuebecAstroHistoricalPage.xaml.cs">
+      <DependentUpon>QuebecAstroHistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\QuebecBancoHistoricalPage.xaml.cs">
+      <DependentUpon>QuebecBancoHistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\QuebecExtraHistoricalPage.xaml.cs">
+      <DependentUpon>QuebecExtraHistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\QuebecLaMiniHistoricalPage.xaml.cs">
+      <DependentUpon>QuebecLaMiniHistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\QuebecLaQuotidienne3HistoricalPage.xaml.cs">
+      <DependentUpon>QuebecLaQuotidienne3HistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\QuebecLaQuotidienne4HistoricalPage.xaml.cs">
+      <DependentUpon>QuebecLaQuotidienne4HistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\QuebecLottoDHistoricalPage.xaml.cs">
+      <DependentUpon>QuebecLottoDHistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\QuebecSprintoHistoricalPage.xaml.cs">
+      <DependentUpon>QuebecSprintoHistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\QuebecToutOuRienHistoricalPage.xaml.cs">
+      <DependentUpon>QuebecToutOuRienHistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\QuebecTriplexHistoricalPage.xaml.cs">
+      <DependentUpon>QuebecTriplexHistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\WesternExtraHistoricalPage.xaml.cs">
+      <DependentUpon>WesternExtraHistoricalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Historical\WesternPick3HistoricalPage.xaml.cs">
+      <DependentUpon>WesternPick3HistoricalPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
@@ -234,7 +315,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Historical\" />
+    <EmbeddedResource Include="Historical\AtlanticSalsaBingoHistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Details\Lotto649DetailsPage.xaml">
@@ -394,6 +478,162 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Statistics\BC49StatisticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\AtlanticBuckoHistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\AtlanticTagHistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\AtlanticKenoHistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\OntarioEncoreMiddayPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\OntarioEncoreEveningPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\OntarioKenoMiddayPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\OntarioKenoEveningPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\OntarioPick2MiddayPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\OntarioPick2EveningPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\OntarioPick3MiddayPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\OntarioPick3EveningPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\OntarioPick4MiddayPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\OntarioPick4EveningPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\QuebecAstroHistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\QuebecBancoHistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\QuebecExtraHistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\QuebecLaMiniHistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\QuebecLaQuotidienne3HistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\QuebecLaQuotidienne4HistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\QuebecLottoDHistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\QuebecTriplexHistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\QuebecSprintoHistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\QuebecToutOuRienHistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\WesternExtraHistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\WesternPick3HistoricalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historical\BCExtraHistoricalPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

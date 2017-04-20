@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CanadaLotteryReslts_PCL.Historical.OntarioEncoreMiddayPage"
+             xmlns:Ad="clr-namespace:CanadaLotteryReslts_PCL.AdMob;assembly=CanadaLotteryReslts_PCL"
+             Title="Encore Midday - Historical">
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <ListView  x:Name="listView"
+                   HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="180">
+
+                        <StackLayout Orientation="Vertical" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal" HeightRequest="50" Padding="5" HorizontalOptions="Center" Margin="0, 5, 0, 0">
+                                <Label Text="{Binding tirage_du}" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Image Source="calendar.png" Aspect="AspectFit" WidthRequest="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                            </StackLayout>
+                            <BoxView HeightRequest="1" BackgroundColor="#c80513" HorizontalOptions="FillAndExpand" Margin="30, 0, 30, 0"/>
+                            <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                                <Label Text="{Binding n1}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="130" HeightRequest="35" BackgroundColor="#369"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+        <!-- AdMob banner START -->
+        <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="Center">
+            <Ad:AdBanner Size="SmartBannerPortrait" HorizontalOptions="Center" VerticalOptions="End"/>
+        </StackLayout>
+        <!-- AdMob banner END -->
+
+    </StackLayout>
+</ContentPage>

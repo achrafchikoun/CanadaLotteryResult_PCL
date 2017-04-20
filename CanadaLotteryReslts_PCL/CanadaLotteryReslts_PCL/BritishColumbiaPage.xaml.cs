@@ -1,6 +1,7 @@
 ﻿using Acr.UserDialogs;
 using CanadaLotteryReslts_PCL.AdMob;
 using CanadaLotteryReslts_PCL.Details;
+using CanadaLotteryReslts_PCL.Historical;
 using CanadaLotteryReslts_PCL.PrizePayouts;
 using CanadaLotteryReslts_PCL.Statistics;
 using Newtonsoft.Json;
@@ -134,7 +135,12 @@ namespace CanadaLotteryReslts_PCL
 
         private void btnExtraHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new BCExtraHistoricalPage());
         }
 
         private void btnLottoMaxDetail_Clicked(object sender, EventArgs e)

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CanadaLotteryReslts_PCL.Historical.QuebecBancoHistoricalPage"
+             xmlns:Ad="clr-namespace:CanadaLotteryReslts_PCL.AdMob;assembly=CanadaLotteryReslts_PCL"
+             Title="Banco - Historical">
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <ListView  x:Name="listView"
+                   HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="180">
+
+                        <StackLayout Orientation="Vertical" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal" HeightRequest="50" Padding="5" HorizontalOptions="Center" Margin="0, 5, 0, 0">
+                                <Label Text="{Binding tirage_du}" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Image Source="calendar.png" Aspect="AspectFit" WidthRequest="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                            </StackLayout>
+                            <BoxView HeightRequest="1" BackgroundColor="#c80513" HorizontalOptions="FillAndExpand" Margin="30, 0, 30, 0"/>
+                            <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                                <Label Text="{Binding n1}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                                <Label Text="{Binding n2}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                                <Label Text="{Binding n3}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                                <Label Text="{Binding n4}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                                <Label Text="{Binding n5}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                                <Label Text="{Binding n6}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                                <Label Text="{Binding n7}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                                <Label Text="{Binding n8}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                                <Label Text="{Binding n9}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                                <Label Text="{Binding n10}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                                <Label Text="{Binding n11}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                                <Label Text="{Binding n12}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                                <Label Text="{Binding n13}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                                <Label Text="{Binding n14}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                                <Label Text="{Binding n15}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
+                                <Label Text="{Binding n16}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
+                                <Label Text="{Binding n17}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                                <Label Text="{Binding n18}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                                <Label Text="{Binding n19}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                                <Label Text="{Binding n20}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="5, 0, 0, 0"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+        <!-- AdMob banner START -->
+        <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="Center">
+            <Ad:AdBanner Size="SmartBannerPortrait" HorizontalOptions="Center" VerticalOptions="End"/>
+        </StackLayout>
+        <!-- AdMob banner END -->
+
+    </StackLayout>
+</ContentPage>

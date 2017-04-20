@@ -20,7 +20,6 @@ namespace CanadaLotteryReslts_PCL
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HomePage : ContentPage
     {
-        IAdInterstitial adInterstitial;
 
         public HomePage()
         {
@@ -29,10 +28,6 @@ namespace CanadaLotteryReslts_PCL
             NavigationPage.SetBackButtonTitle(this, "");
 
             GlobalVariable.count++;
-
-            adInterstitial = DependencyService.Get<IAdInterstitial>();
-
-            adInterstitial.ShowAd();
 
             Device.BeginInvokeOnMainThread(() =>
             {
@@ -89,6 +84,10 @@ namespace CanadaLotteryReslts_PCL
 
 
                     UserDialogs.Instance.HideLoading();
+
+                    IAdInterstitial adInterstitial = DependencyService.Get<IAdInterstitial>();
+
+                    adInterstitial.ShowAd();
                 }
             }
             catch (Exception ex)

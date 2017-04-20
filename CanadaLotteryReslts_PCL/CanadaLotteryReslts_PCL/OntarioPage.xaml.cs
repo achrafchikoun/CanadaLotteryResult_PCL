@@ -1,5 +1,6 @@
 ﻿using Acr.UserDialogs;
 using CanadaLotteryReslts_PCL.AdMob;
+using CanadaLotteryReslts_PCL.Historical;
 using CanadaLotteryReslts_PCL.PrizePayouts;
 using CanadaLotteryReslts_PCL.Statistics;
 using Newtonsoft.Json;
@@ -203,12 +204,22 @@ namespace CanadaLotteryReslts_PCL
 
         private void btnEncoreMiddayHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new OntarioEncoreMiddayPage());
         }
 
         private void btnEncoreEveningHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new OntarioEncoreEveningPage());
         }
 
         private void btnMegaDicePrize_Clicked(object sender, EventArgs e)
@@ -253,12 +264,22 @@ namespace CanadaLotteryReslts_PCL
 
         private void btnKenoEveningHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new OntarioKenoEveningPage());
         }
 
         private void btnKenoMiddayHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new OntarioKenoMiddayPage());
         }
 
         private void btnLottarioPrize_Clicked(object sender, EventArgs e)
@@ -283,32 +304,62 @@ namespace CanadaLotteryReslts_PCL
 
         private void btnPick2MiddayHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new OntarioPick2MiddayPage());
         }
 
         private void btnPick2EveningHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new OntarioPick2EveningPage());
         }
 
         private void btnPick3MiddayHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new OntarioPick3MiddayPage());
         }
 
         private void btnPick3EveningHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new OntarioPick3EveningPage());
         }
 
         private void btnPick4MiddayHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new OntarioPick4MiddayPage());
         }
 
         private void btnPick4EveningHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new OntarioPick4EveningPage());
         }
     }
 }

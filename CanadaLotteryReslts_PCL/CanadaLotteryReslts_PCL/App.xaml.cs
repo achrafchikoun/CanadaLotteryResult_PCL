@@ -15,10 +15,7 @@ namespace CanadaLotteryReslts_PCL
             InitializeComponent();
 
             MainPage = new CanadaLotteryReslts_PCL.MainPage();
-
-            IAdInterstitial adInterstitial = DependencyService.Get<IAdInterstitial>();
-
-            adInterstitial.ShowAd();
+            
         }
 
         protected override void OnStart()
@@ -33,7 +30,7 @@ namespace CanadaLotteryReslts_PCL
 
         protected override void OnResume()
         {
-            // Handle when your app resumes
+            
         }
     }
 }

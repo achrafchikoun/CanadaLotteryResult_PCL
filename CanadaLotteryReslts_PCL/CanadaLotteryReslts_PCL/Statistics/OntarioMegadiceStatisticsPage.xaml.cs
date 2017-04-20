@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CanadaLotteryReslts_PCL.AdMob;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,18 @@ namespace CanadaLotteryReslts_PCL.Statistics
         public OntarioMegadiceStatisticsPage()
         {
             InitializeComponent();
+
+            GlobalVariable.count++;
+            if (GlobalVariable.count == 4)
+            {
+                GlobalVariable.count = 0;
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    IAdInterstitial adInterstitial = DependencyService.Get<IAdInterstitial>();
+
+                    adInterstitial.ShowAd();
+                });
+            }
         }
     }
 }

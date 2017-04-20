@@ -1,5 +1,6 @@
 ﻿using Acr.UserDialogs;
 using CanadaLotteryReslts_PCL.AdMob;
+using CanadaLotteryReslts_PCL.Historical;
 using CanadaLotteryReslts_PCL.PrizePayouts;
 using CanadaLotteryReslts_PCL.Statistics;
 using Newtonsoft.Json;
@@ -216,37 +217,72 @@ namespace CanadaLotteryReslts_PCL
 
         private void btnAstroHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new QuebecAstroHistoricalPage());
         }
 
         private void btnBancoHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new QuebecBancoHistoricalPage());
         }
 
         private void btnExtraHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new QuebecExtraHistoricalPage());
         }
 
         private void btnLaMiniHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new QuebecLaMiniHistoricalPage());
         }
 
         private void btnQuotidienne3Historical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new QuebecLaQuotidienne3HistoricalPage());
         }
 
         private void btnQuotidienne4Historical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new QuebecLaQuotidienne4HistoricalPage());
         }
 
         private void btnLottoDHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new QuebecLottoDHistoricalPage());
         }
 
         private void btnLottoQuebecMaxStatitics_Clicked(object sender, EventArgs e)
@@ -271,17 +307,32 @@ namespace CanadaLotteryReslts_PCL
 
         private void btnTriplexHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new QuebecTriplexHistoricalPage());
         }
 
         private void btnSprintoHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new QuebecSprintoHistoricalPage());
         }
 
         private void btnToutouRienHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new QuebecToutOuRienHistoricalPage());
         }
     }
 }

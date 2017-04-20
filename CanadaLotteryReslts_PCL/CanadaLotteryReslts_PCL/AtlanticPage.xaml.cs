@@ -1,5 +1,6 @@
 ﻿using Acr.UserDialogs;
 using CanadaLotteryReslts_PCL.AdMob;
+using CanadaLotteryReslts_PCL.Historical;
 using CanadaLotteryReslts_PCL.PrizePayouts;
 using CanadaLotteryReslts_PCL.Statistics;
 using Newtonsoft.Json;
@@ -171,22 +172,42 @@ namespace CanadaLotteryReslts_PCL
 
         private void btnLottoBuckoHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new AtlanticBuckoHistoricalPage());
         }
 
         private void btnLottoSalsaHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new AtlanticSalsaBingoHistoricalPage());
         }
 
         private void btnLottoTagHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new AtlanticTagHistoricalPage());
         }
 
         private void btnLottoKenoHistorical_Clicked(object sender, EventArgs e)
         {
-
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Error", "Connect to the internet and try again.", "OK");
+                return;
+            }
+            Navigation.PushAsync(new AtlanticKenoHistoricalPage());
         }
     }
 }
