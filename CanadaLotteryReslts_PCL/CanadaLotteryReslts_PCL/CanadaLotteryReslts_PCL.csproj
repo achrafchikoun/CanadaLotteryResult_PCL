@@ -147,6 +147,25 @@
       <DependentUpon>MasterPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MasterPageItem.cs" />
+    <Compile Include="Models\Astro.cs" />
+    <Compile Include="Models\Banco.cs" />
+    <Compile Include="Models\BCExtra.cs" />
+    <Compile Include="Models\Bucko.cs" />
+    <Compile Include="Models\Encore.cs" />
+    <Compile Include="Models\Extra.cs" />
+    <Compile Include="Models\Keno.cs" />
+    <Compile Include="Models\LaMini.cs" />
+    <Compile Include="Models\LaQuotidienne3.cs" />
+    <Compile Include="Models\LaQuotidienne4.cs" />
+    <Compile Include="Models\LottoD.cs" />
+    <Compile Include="Models\Pick2.cs" />
+    <Compile Include="Models\Pick3.cs" />
+    <Compile Include="Models\Pick4.cs" />
+    <Compile Include="Models\SalsaBingo.cs" />
+    <Compile Include="Models\Sprinto.cs" />
+    <Compile Include="Models\Tag.cs" />
+    <Compile Include="Models\ToutOuRien.cs" />
+    <Compile Include="Models\Triplex.cs" />
     <Compile Include="OntarioPage.xaml.cs">
       <DependentUpon>OntarioPage.xaml</DependentUpon>
     </Compile>

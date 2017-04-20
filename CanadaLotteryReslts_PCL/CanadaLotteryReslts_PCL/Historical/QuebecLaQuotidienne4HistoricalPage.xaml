@@ -22,7 +22,6 @@
                                 <Label Text="{Binding n2}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
                                 <Label Text="{Binding n3}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
                                 <Label Text="{Binding n4}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                                <Label Text="{Binding n5}" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="130" HeightRequest="35" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
                             </StackLayout>
                         </StackLayout>
 
