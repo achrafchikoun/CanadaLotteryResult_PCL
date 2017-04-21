@@ -23,18 +23,20 @@ namespace CanadaLotteryReslts_PCL.Historical
             InitializeComponent();
 
             GlobalVariable.count++;
-            if (GlobalVariable.count == 4)
+
+            Device.BeginInvokeOnMainThread(() =>
             {
-                GlobalVariable.count = 0;
-                Device.BeginInvokeOnMainThread(() =>
+                if (GlobalVariable.count == 4)
                 {
+                    GlobalVariable.count = 0;
+
                     IAdInterstitial adInterstitial = DependencyService.Get<IAdInterstitial>();
 
                     adInterstitial.ShowAd();
+                }
 
-                    callAPI();
-                });
-            }
+                callAPI();
+            });
         }
 
         private async Task callAPI()

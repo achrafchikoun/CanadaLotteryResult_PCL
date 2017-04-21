@@ -12,7 +12,7 @@ namespace CanadaLotteryReslts_PCL.Models
         public string n2 { get; set; }
         public string n3 { get; set; }
         public string n4 { get; set; }
-        public string n5 { get; set; 
+        public string n5 { get; set; } 
         public string tirage_du { get; set; }
     }
 }
