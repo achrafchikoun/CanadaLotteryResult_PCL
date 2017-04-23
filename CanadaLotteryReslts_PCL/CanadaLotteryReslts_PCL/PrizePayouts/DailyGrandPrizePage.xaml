@@ -4,7 +4,7 @@
              x:Class="CanadaLotteryReslts_PCL.PrizePayouts.DailyGrandPrizePage"
              xmlns:Ad="clr-namespace:CanadaLotteryReslts_PCL.AdMob;assembly=CanadaLotteryReslts_PCL"
              BackgroundColor="White"
-             Title="Lotto 649 - Prize Payouts">
+             Title="Daily Grand - Prize Payouts">
     <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
         <ScrollView>
             <Grid>

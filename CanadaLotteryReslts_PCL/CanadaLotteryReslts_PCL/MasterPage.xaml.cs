@@ -57,6 +57,7 @@ namespace CanadaLotteryReslts_PCL
             });
 
             listView.ItemsSource = masterPageItems;
+
         }
     }
 }

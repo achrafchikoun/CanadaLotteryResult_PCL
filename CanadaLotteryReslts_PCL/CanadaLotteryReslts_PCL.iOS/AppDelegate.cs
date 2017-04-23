@@ -25,11 +25,13 @@ namespace CanadaLotteryReslts_PCL.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
-            return base.FinishedLaunching(app, options);
-
             UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(1, 71, 126);
             UINavigationBar.Appearance.Translucent = false;
             UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes { TextColor = UIColor.White });
+            UINavigationBar.Appearance.TintColor = UIColor.White;
+
+            return base.FinishedLaunching(app, options);
+
         }
     }
 }

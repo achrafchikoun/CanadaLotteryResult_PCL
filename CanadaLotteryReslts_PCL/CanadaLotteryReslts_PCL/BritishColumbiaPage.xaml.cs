@@ -27,6 +27,8 @@ namespace CanadaLotteryReslts_PCL
         {
             InitializeComponent();
 
+            NavigationPage.SetBackButtonTitle(this, "");
+
             GlobalVariable.count++;
 
             if(GlobalVariable.count == 4)
@@ -47,7 +49,7 @@ namespace CanadaLotteryReslts_PCL
 
         private async Task callAPI()
         {
-            UserDialogs.Instance.ShowLoading("Veuillez patienter...", MaskType.Black);
+            UserDialogs.Instance.ShowLoading("Please wait...", MaskType.Black);
             try
             {
                 HttpClient client = new HttpClient();
@@ -108,7 +110,7 @@ namespace CanadaLotteryReslts_PCL
             catch (Exception ex)
             {
                 UserDialogs.Instance.HideLoading();
-                await DisplayAlert("Erreur", "Une erreur s'est produite, réessayer à nouveau.", "OK");
+                await DisplayAlert("Error", "An error has occurred, please try again.", "OK");
                 //Debug.WriteLine(@"ERROR {0}", ex.Message);
             }
         }

@@ -13,8 +13,9 @@ namespace CanadaLotteryReslts_PCL
         public MainPage()
         {
             InitializeComponent();
-
+            
             masterPage.ListView.ItemSelected += OnItemSelected;
+
         }
 
         void OnItemSelected(object sender, SelectedItemChangedEventArgs e)

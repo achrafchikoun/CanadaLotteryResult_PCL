@@ -15,7 +15,14 @@ namespace CanadaLotteryReslts_PCL
             InitializeComponent();
 
             MainPage = new CanadaLotteryReslts_PCL.MainPage();
+            /*MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.FromHex("#01477e"),
+                BarTextColor = Color.White,
+            };*/
+
             
+
         }
 
         protected override void OnStart()

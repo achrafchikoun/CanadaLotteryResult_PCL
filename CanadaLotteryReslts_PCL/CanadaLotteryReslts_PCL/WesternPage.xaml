@@ -20,13 +20,13 @@
 
                         <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
                         <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
-                            <Label x:Name="western_649_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
-                            <Label x:Name="western_649_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                            <Label x:Name="western_649_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                            <Label x:Name="western_649_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                            <Label x:Name="western_649_n5" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                            <Label x:Name="western_649_n6" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                            <Label x:Name="western_649_n7" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="western_649_n1" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369"/>
+                            <Label x:Name="western_649_n2" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="western_649_n3" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="western_649_n4" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="western_649_n5" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="western_649_n6" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="western_649_n7" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
                         </StackLayout>
 
                         <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
@@ -50,7 +50,7 @@
 
                         <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
                         <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
-                            <Label x:Name="extra_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="130" HeightRequest="35" BackgroundColor="#369"/>
+                            <Label x:Name="extra_n1" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="130" HeightRequest="35" BackgroundColor="#369"/>
                         </StackLayout>
 
                         <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
@@ -73,14 +73,14 @@
 
                         <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
                         <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
-                            <Label x:Name="western_max_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
-                            <Label x:Name="western_max_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                            <Label x:Name="western_max_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                            <Label x:Name="western_max_n4" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                            <Label x:Name="western_max_n5" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                            <Label x:Name="western_max_n6" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                            <Label x:Name="western_max_n7" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                            <Label x:Name="western_max_n8" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="western_max_n1" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369"/>
+                            <Label x:Name="western_max_n2" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="western_max_n3" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="western_max_n4" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="western_max_n5" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="western_max_n6" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="western_max_n7" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="western_max_n8" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#757" Margin="3, 0, 0, 0"/>
                         </StackLayout>
 
                         <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
@@ -104,9 +104,9 @@
 
                         <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
                         <StackLayout Orientation="Horizontal" Margin="5, 10, 5, 10" HorizontalOptions="Center">
-                            <Label x:Name="pick_3_n1" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369"/>
-                            <Label x:Name="pick_3_n2" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
-                            <Label x:Name="pick_3_n3" Text="-" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="35" HeightRequest="35" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="pick_3_n1" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369"/>
+                            <Label x:Name="pick_3_n2" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
+                            <Label x:Name="pick_3_n3" Text="-" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="32" MinimumWidthRequest="32" HeightRequest="32" MinimumHeightRequest="32" BackgroundColor="#369" Margin="3, 0, 0, 0"/>
                         </StackLayout>
 
                         <BoxView HeightRequest="1" BackgroundColor="#dddddd" HorizontalOptions="FillAndExpand" Margin="5, 0, 5, 0"/>
