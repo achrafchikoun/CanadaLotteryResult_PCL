@@ -23,7 +23,7 @@
 	<key>MinimumOSVersion</key>
 	<string>8.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>CanadaLotteryReslts_PCL</string>
+	<string>Canada Lottery Reslts</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.lottery.canada</string>
 	<key>CFBundleVersion</key>

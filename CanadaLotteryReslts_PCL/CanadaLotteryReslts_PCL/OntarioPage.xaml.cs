@@ -106,13 +106,13 @@ namespace CanadaLotteryReslts_PCL
                     dynamic ontario_pick_2_midday = output["ontario_pick_2_midday"];
                     pick_2_midday_n1.Text = ontario_pick_2_midday[0]["n1"].Value;
                     pick_2_midday_n2.Text = ontario_pick_2_midday[0]["n2"].Value;
-                    lottario_tirage_du.Text = ontario_pick_2_midday[0]["tirage_du"].Value;
+                    pick_2_midday_tirage_du.Text = ontario_pick_2_midday[0]["tirage_du"].Value;
 
                     //ontario_pick_2_evening
                     dynamic ontario_pick_2_evening = output["ontario_pick_2_evening"];
-                    pick_2_midday_n1.Text = ontario_pick_2_evening[0]["n1"].Value;
-                    pick_2_midday_n2.Text = ontario_pick_2_evening[0]["n2"].Value;
-                    lottario_tirage_du.Text = ontario_pick_2_evening[0]["tirage_du"].Value;
+                    pick_2_evening_n1.Text = ontario_pick_2_evening[0]["n1"].Value;
+                    pick_2_evening_n2.Text = ontario_pick_2_evening[0]["n2"].Value;
+                    pick_2_evening_tirage_du.Text = ontario_pick_2_evening[0]["tirage_du"].Value;
 
                     //ontario_pick_3_midday
                     dynamic ontario_pick_3_midday = output["ontario_pick_3_midday"];
